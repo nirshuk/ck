@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Chatty Kidz RemoteSummon</title>
+  </head>
+
+  <body background="img/summonbackground.png">
+  
+  			<div>
+    			<h2 id="message" style="color:white"></h2>
+    			
+  			</div>
+
+  		
+  
+  <script>
+  var obj = JSON.parse(java2js.getResult());
+  document.getElementById("message").innerHTML = obj.sender +" : "+obj.message;
+	</script>  
+  </body>
+</html>
